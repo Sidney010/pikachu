@@ -28,9 +28,17 @@ body {
     background-color: var(--primary-color);
 }
 
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90vw;
+    margin: auto;
+}
+
 header {
     background-color: aquamarine;
-    flex-grow: 1;
+    margin-top: 70px;
 }
 
 main {
@@ -40,4 +48,5 @@ main {
 
 footer {
     background-color: aqua;
+    margin-bottom: 24px;
 }
