@@ -21,7 +21,6 @@ li {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,6 +33,19 @@ body {
     grid-template-columns: repeat(12, 1fr);
     width: 90vw;
     margin: auto;
+}
+
+.rodape {
+    grid-column: 5/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 1rem;
+    font-family: "Righteous", cursive;
+    place-self: center;
 }
 
 header {
@@ -52,11 +64,37 @@ header a {
 }
 
 main {
-    background-color: blue;
     flex-grow: 1;
 }
 
-footer {
+.titulo {
+    grid-column: 1/-1;
+    place-self: center;
+}
+
+.description {
+    background-color: antiquewhite;
+    grid-column: 1/7;
+}
+
+h2 {
+    color: var(--secundary-color);
+    font-size: 4rem;
+    font-family: "Righteous", cursive;
+}
+
+h3 {
+    color: var(--secundary-color);
+    font-size: 20px;
+    font-family: "Righteous", cursive;
+}
+
+.action {
     background-color: aqua;
+    grid-column: 7/-1;
+}
+
+footer {
+    background-color: tomato;
     margin-bottom: 24px;
 }
