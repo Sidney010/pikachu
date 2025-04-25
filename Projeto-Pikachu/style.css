@@ -24,15 +24,18 @@ body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: var(--primary-color);
 }
 
 header {
     background-color: aquamarine;
+    flex-grow: 1;
 }
 
 main {
     background-color: blue;
+    flex-grow: 3;
 }
 
 footer {
